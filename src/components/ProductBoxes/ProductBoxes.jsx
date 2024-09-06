@@ -26,52 +26,6 @@ const ProductBoxes = () => {
                   <ProductBox />
                   <ProductBox />
                   <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
-                  <ProductBox />
             </div>
       );
 }
