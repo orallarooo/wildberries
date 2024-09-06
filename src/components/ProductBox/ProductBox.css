@@ -40,10 +40,6 @@
       color: #000;
 }
 
-.product-bottom {
-      min-width: 100px;
-      min-height: 100px;
-}
 
 .product-box__price {
       margin-top: 7px;
@@ -71,8 +67,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 120px;
-      min-width: 80px;
+      width: 120px;
       color: #aeadb4;
 }
 
