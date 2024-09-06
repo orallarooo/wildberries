@@ -1,0 +1,12 @@
+.product-boxes {
+      width: 100%;
+      max-width: 1490px;
+      padding: 0 20px;
+      margin: 0 auto;
+      margin-top: 30px;
+
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 40px;
+      column-gap: 30px;
+}

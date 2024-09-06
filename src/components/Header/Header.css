@@ -1,0 +1,136 @@
+.header {
+      background: linear-gradient(0deg, rgba(36, 36, 36, .05) 0, rgba(36, 36, 36, .05) 100%), linear-gradient(97deg, #ed3cca .49%, #df34d2 14.88%, #d02bd9 29.27%, #bf22e1 43.14%, #ae1ae8 57.02%, #9a10f0 70.89%, #8306f7 84.76%, #7c1af8 99.15%);
+      padding: 16px 0;
+}
+
+.header__container {
+      max-width: 1490px;
+      padding: 0 20px;
+      margin: 0 auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.logo img {
+      font-weight: 700;
+      font-size: 36px;
+      color: #fff;
+}
+
+
+/* header-burger-btn */
+    
+.header-burger-btn {
+      width: 58px;
+      height: 58px;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 16px;
+      margin-left: 20px;
+      background-color: transparent;
+
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+      justify-content: center;
+} 
+    
+.header-burger-btn span {
+      display: block;
+      width: 26px;
+      height: 3px;
+      border-radius: 1px;
+      background-color: #fff;
+      border-radius: 3px;
+}
+.header__search-bar {
+      flex: 1;
+      margin-left: 15px;
+      margin-right: 20px;
+      position: relative;
+}
+.header__search-bar input {
+      width: 100%;
+      height: 58px;
+      padding: 17px 100px 17px 20px;
+      outline: none;
+      border: 1px transparent;
+
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 18px;
+      line-height: 22px;
+      color: #242424;
+      margin: 0;
+      border-radius: 16px;
+      background: #fff;
+      -webkit-appearance: none;
+      appearance: none;
+      caret-color: #a73afd;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+}
+
+::placeholder {
+      color: #aeadb4;
+      opacity: 1; /* Firefox */
+}
+    
+::-ms-input-placeholder { /* Edge 12 -18 */
+      color: #aeadb4;
+}
+
+.header__search-bar-photo {
+     position: absolute;
+     width: 28px;
+     height: 28px;
+     background-image: url("./img/photo.svg"); 
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+}
+
+.header__left {
+      display: flex;
+      gap: 25px;
+      color: #fff;
+}
+
+.header__left-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, .6);
+      transition: color .3s ease 0s;
+      cursor: pointer;
+}   
+
+.header__left-box:hover {
+      color: #fff;
+}  
+
+.header__left-img{
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.location-img {
+      background-image: url("./img/location.svg");
+}
+.profile-img {
+      background-image: url("./img/profile.svg");
+}
+.basket-img {
+      background-image: url("./img/basket.svg");
+      background-size: cover;
+}
