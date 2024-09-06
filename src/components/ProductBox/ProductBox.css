@@ -10,6 +10,7 @@
 }
 .product-box__img {
       position: relative;
+      overflow: hidden;
 }
 
 
