@@ -6,6 +6,8 @@
 .product-box__img img{
       width: 100%;
       height: auto;
+      min-width: 100px;
+      min-height: 400px;
       border-radius: 12px;
       overflow: hidden;
 }
