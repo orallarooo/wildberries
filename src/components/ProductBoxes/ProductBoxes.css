@@ -1,7 +1,7 @@
 .product-boxes {
       width: 100%;
       max-width: 1490px;
-      padding: 0 20px;
+      padding: 0 15px;
       margin: 0 auto;
       margin-top: 30px;
 
@@ -9,4 +9,20 @@
       grid-template-columns: repeat(6, 1fr);
       row-gap: 40px;
       column-gap: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+      .product-boxes {
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 40px;
+            column-gap: 8px;
+      }
+}
+
+@media screen and (max-width: 767px) {
+      .product-boxes {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 25px;
+            column-gap: 8px;
+      }
 }

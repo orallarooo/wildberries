@@ -5,7 +5,7 @@
 
 .header__container {
       max-width: 1490px;
-      padding: 0 20px;
+      padding: 0 15px;
       margin: 0 auto;
 
       display: flex;
@@ -133,4 +133,28 @@
 .basket-img {
       background-image: url("./img/basket.svg");
       background-size: cover;
+}
+
+
+@media screen and (max-width: 1023px) {
+      .logo,
+      .header-burger-btn,
+      .header__left-box:not(:first-child),
+      .header__left-box p {
+            display: none;
+      }
+      .header {
+            padding: 12px 0;
+      }
+      .header__search-bar input {
+            font-size: 16px;
+            height: 40px;
+            padding: 8px 80px 10px 12px;
+            border-radius: 12px;
+      }
+      .header__search-bar {
+            flex: 1;
+            margin-left: 0;
+            margin-right: 15px;
+      }
 }
