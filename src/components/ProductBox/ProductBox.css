@@ -150,6 +150,12 @@
       }
       .product-box__img img{
             min-width: 150px;
-            min-height: 26vh; 
+            min-height: 26vh;
+
+            max-width: 400px;
+            max-height: 550px;
+
+            width: 100%;
+            height: 100%; 
       }
 }
