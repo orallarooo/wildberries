@@ -10,7 +10,7 @@
       width: 100%;
       height: auto;
       min-width: 100px;
-      min-height: auto;
+      min-height: 25vh;
       border-radius: 12px;
       overflow: hidden;
 }
@@ -47,7 +47,6 @@
       color: #000;
 }
 
-
 .product-box__price {
       margin-top: 7px;
       color: #a73afd;
@@ -60,6 +59,7 @@
       font-size: 12px;
       color: #a73afd;
 }
+
 .product-box__firm {
       margin-top: 4px;
       font-size: 14px;
