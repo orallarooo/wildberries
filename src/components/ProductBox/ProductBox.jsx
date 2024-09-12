@@ -2,8 +2,7 @@ import "./ProductBox.css"
 
 import star_img from "./img/star.svg"
 import verified_img from "./img/verify.svg"
-import product_img from "./img/1.webp"
-import product_img_second from "./img/2.webp"
+import product_img_second from "./img/1.webp"
 import basket_img from "./img/basket.svg"
 
 
