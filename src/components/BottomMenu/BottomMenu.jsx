@@ -16,7 +16,7 @@ const BottomMenu = () => {
                         <img src={search_img} alt="" />
                   </a>
                   <a href="#">
-                        <img src={basket_img} alt="" />
+                        <img className="bottom-menu__basket-img" src={basket_img} alt="" />
                   </a>
                   <a href="#">
                         <img  className="bottom-menu__like-img" src={like_img} alt="" />

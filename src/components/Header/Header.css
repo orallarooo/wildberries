@@ -5,18 +5,17 @@
 
 .header__container {
       max-width: 1490px;
-      padding: 0 15px;
+      padding: 0 32px;
       margin: 0 auto;
+      height: 58px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
 }
 
-.logo img {
-      font-weight: 700;
-      font-size: 36px;
-      color: #fff;
+.logo{
+      margin-top: 3px;
 }
 
 
@@ -35,7 +34,12 @@
       gap: 6px;
       align-items: center;
       justify-content: center;
+      transition: border-color .3s ease 0s;
 } 
+
+.header-burger-btn:hover {
+      border: #fff 1px solid;
+}
     
 .header-burger-btn span {
       display: block;
@@ -44,10 +48,20 @@
       border-radius: 1px;
       background-color: #fff;
       border-radius: 3px;
+      transition: transform .3s ease 0s;
+}
+.header-burger-btn.is_active span:nth-child(1) {
+	transform: rotate(45deg) translate(6px, 6px);
+}
+.header-burger-btn.is_active span:nth-child(2) {
+      opacity: 0;
+}
+.header-burger-btn.is_active span:nth-child(3) {
+	transform: rotate(-45deg) translate(7px,  -6px);
 }
 .header__search-bar {
       flex: 1;
-      margin-left: 15px;
+      margin-left: 12px;
       margin-right: 20px;
       position: relative;
 }
@@ -87,11 +101,11 @@
      width: 28px;
      height: 28px;
      background-image: url("./img/photo.svg"); 
-      right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-
+     background-repeat: no-repeat;
+     right: 15px;
+     top: 50%;
+     transform: translateY(-50%);
+     cursor: pointer;
 }
 
 .header__left {
@@ -135,7 +149,17 @@
       background-size: cover;
 }
 
-
+@media screen and (max-width: 1199px) {
+      .header__container {
+            padding: 0 15px;
+      }
+      .logo img{
+            max-width: 172px;
+      }
+      .logo{
+            margin-top: 5px;
+      }
+}
 @media screen and (max-width: 1023px) {
       .logo,
       .header-burger-btn,
@@ -155,6 +179,14 @@
       .header__search-bar {
             flex: 1;
             margin-left: 0;
-            margin-right: 15px;
+            margin-right: 14px;
+      }
+      .location-img {
+            background-image: url("./img/location-2.svg");
+      }
+      .header__search-bar-photo {
+            width: 24px;
+            height: 24px;
+            right: 12px;
       }
 }
