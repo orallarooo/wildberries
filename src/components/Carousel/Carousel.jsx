@@ -45,6 +45,7 @@ export default function SimpleSlider() {
       <div className="slider-container">
             <Slider {...settings} className="slider">
                   <div className="slider__box" >
+                        <img src={slider_img} alt="" />
                   </div>
                   <div className="slider__box">
                         <img src={slider_img_2} alt="" />

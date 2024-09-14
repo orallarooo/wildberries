@@ -34,6 +34,11 @@
       position: relative;
       outline: none;
       border: none;
+      /* background: url("./img/del_2880_uz.webp"); */
+}
+
+.slider__box img {
+      position: absolute!important;
 }
 
 .slick-slide {
