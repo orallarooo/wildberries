@@ -38,3 +38,8 @@
             padding: 0 15px!important;
       }
 }  
+@media screen and (max-width: 1023px) {
+      .swiper__box {
+            margin-top: 15px;
+      }
+}
