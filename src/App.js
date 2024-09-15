@@ -4,8 +4,6 @@ import ProductBoxes from './components/ProductBoxes/ProductBoxes';
 import BottomMenu from './components/BottomMenu/BottomMenu';
 import SimpleSlider from './components/Carousel/Carousel';
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

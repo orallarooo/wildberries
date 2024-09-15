@@ -1,62 +1,49 @@
-import React from "react";
-import Slider from "react-slick";
-
 import "./Carousel.css"
 
-import slider_img from "./img/uhnydazha_2880_1.webp"
-import slider_img_2 from "./img/del_2880_uz.webp"
+import slide_img from "./img/del_2880_uz.webp"
+import slide_img_2 from "./img/uhnydazha_2880_1.webp"
 
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-function SampleNextArrow(props) {
-      const { className, style, onClick } = props;
-            return (
-            <div
-                  className={className}
-                  style={{ ...style, display: "block", background: "red" }}
-                  onClick={onClick}
-            />
-            );
-      }
-    
-      function SamplePrevArrow(props) {
-            const { className, style, onClick } = props;
-            return (
-            <div
-                  className={className}
-                  style={{ ...style, display: "block", background: "green" }}
-                  onClick={onClick}
-            />
-            );
-      }
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-export default function SimpleSlider() {
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
 
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
-  };
-
+export default function App() {
   return (
-      <div className="slider-container">
-            <Slider {...settings} className="slider">
-                  <div className="slider__box" >
-                        <img src={slider_img} alt="" />
-                  </div>
-                  <div className="slider__box">
-                        <img src={slider_img_2} alt="" />
-                  </div>
-                  <div className="slider__box">
-                        <img src={slider_img} alt="" />
-                  </div>
-                  <div className="slider__box">
-                        <img src={slider_img_2} alt="" />
-                  </div>
-            </Slider>
-    </div>
+    <div className="swiper__box">
+
+   
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+            <img src={slide_img} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slide_img_2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slide_img} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+            <img src={slide_img_2} alt="" />
+        </SwiperSlide>
+      </Swiper>
+     </div>
   );
 }
