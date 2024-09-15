@@ -27,21 +27,22 @@ export default function App() {
         pagination={{
           clickable: true,
         }}
+        lazy={true}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
-            <img src={slide_img} alt="" />
+            <img loading="lazy" src={slide_img} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={slide_img_2} alt="" />
+            <img loading="lazy" src={slide_img_2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={slide_img} alt="" />
+            <img loading="lazy" src={slide_img} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={slide_img_2} alt="" />
+            <img loading="lazy" src={slide_img_2} alt="" />
         </SwiperSlide>
       </Swiper>
      </div>
