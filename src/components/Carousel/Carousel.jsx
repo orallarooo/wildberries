@@ -34,15 +34,19 @@ export default function App() {
       >
         <SwiperSlide>
             <img loading="lazy" src={slide_img} alt="" />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </SwiperSlide>
         <SwiperSlide>
             <img loading="lazy" src={slide_img_2} alt="" />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </SwiperSlide>
         <SwiperSlide>
             <img loading="lazy" src={slide_img} alt="" />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </SwiperSlide>
         <SwiperSlide>
             <img loading="lazy" src={slide_img_2} alt="" />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </SwiperSlide>
       </Swiper>
      </div>
