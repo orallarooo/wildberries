@@ -1,0 +1,17 @@
+.overlay-menu {
+      position: fixed;
+      height: 100vh;
+      top: 90px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #2424245f;
+      z-index: 99;
+}
+
+.overlay-menu__nav {
+      background-color: #fff;
+      display: inline-block;
+      z-index: 9999;
+      overflow-y: scroll;
+}

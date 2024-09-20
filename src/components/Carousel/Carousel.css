@@ -17,8 +17,6 @@
       background: transparent;
       border-radius: 16px;
 }
-
-    
 .swiper-slide img {
       border-radius: 16px;
       width: auto;
@@ -33,6 +31,14 @@
       left: -50%;
       transform: translateX(50%);
 }   
+.swiper-pagination-bullet {
+      background-color: #ffffff80!important;
+}
+.swiper-pagination-bullet-active {
+      background-color: #fff!important;
+}
+
+
 @media screen and (max-width: 1199px) {
       .swiper__box {
             padding: 0 15px!important;
@@ -41,5 +47,9 @@
 @media screen and (max-width: 1023px) {
       .swiper__box {
             margin-top: 15px;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+            display: none!important;
       }
 }
