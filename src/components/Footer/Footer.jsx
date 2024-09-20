@@ -30,7 +30,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__inner">
-        {/* <div className="footer__top">
+        <div className="footer__top footer__top-desktop">
           <div className="footer__top-box">
             <h3>Покупателям</h3>
             <ul className="footer__top-items">
@@ -140,11 +140,11 @@ const Footer = () => {
           <div className="footer__top-box">
             <img src={qr_code_img} alt="qr-code" />
           </div>
-        </div> */}
+        </div>
 
 
 
-        <div className="footer__top">
+        <div className="footer__top footer__top-mobile">
 
           <div className="footer__top-box">
             <h3 
@@ -173,7 +173,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
 
           <div className="footer__top-box">
             <h3 
@@ -211,9 +210,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            
           </div>
-
 
           <div className="footer__top-box">
             <h3 
@@ -241,8 +238,6 @@ const Footer = () => {
             </ul>
     
           </div>
-
-
           <div className="footer__top-box last-box">
             <h3 
             className={!isOpen4 ? "footer__top-title" : "footer__top-title active"} 
@@ -277,7 +272,6 @@ const Footer = () => {
                     </a>
                   </li>
                 </ul>
-
           </div>
 
           <div className="footer__apps">
@@ -297,8 +291,6 @@ const Footer = () => {
 
         </div>
         
-
-
         <div className="footer__bottom">
             <div className="footer__bottom-left">
                   <p>
