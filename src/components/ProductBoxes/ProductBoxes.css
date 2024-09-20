@@ -1,7 +1,7 @@
 .product-boxes {
       width: 100%;
       max-width: 1490px;
-      padding: 0 32px;
+      padding: 0 32px 50px 32px;
       margin: 0 auto;
       margin-top: 30px;
 
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 1199px) {
       .product-boxes {
-            padding: 0 15px;
+            padding: 0 15px 40px 15px;
       }
 }
 
