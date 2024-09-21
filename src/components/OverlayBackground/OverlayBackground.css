@@ -1,6 +1,6 @@
 .overlay-bg {
       position: fixed;
-      height: 100vh;
+      height: 0;
       top: 90px;
       left: 0;
       bottom: 0;
@@ -15,6 +15,7 @@
 }
 
 .overlay-bg.active {
+      height: 100vh;
       opacity: 1;
       user-select: all;
 }
