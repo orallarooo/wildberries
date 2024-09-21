@@ -1,5 +1,4 @@
-    
-import React, { useState, lazy, Suspense} from 'react';
+import React, { useState } from 'react';
 
 import "./Footer.css"
 import Dropdown         from "../Dropdown/Dropdown";
@@ -29,8 +28,9 @@ const Footer = () => {
   };
   
   return (
-      <Suspense fallback={<div>Loading...</div>}>
-        <footer className="footer">
+
+
+    <footer className="footer">
       <div className="footer__inner">
         <div className="footer__top footer__top-desktop">
           <div className="footer__top-box">
@@ -327,8 +327,9 @@ const Footer = () => {
             </div>
         </div>
         </div>
-        </footer>
-      </Suspense>
+    </footer>
+
+
   );
 };
 
