@@ -8,7 +8,7 @@
 
 .product-box__img img{
       width: 284px;
-      height: 380px;
+      height: auto;
       min-width: 100px;
       min-height: 25vh;  
       border-radius: 12px;
