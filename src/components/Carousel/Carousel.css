@@ -10,7 +10,10 @@
       margin: 0 auto;
       margin-top: 24px;
 }
-
+.swiper-button-prev,
+      .swiper-button-next {
+            display: none!important;
+      }
 .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -48,8 +51,5 @@
       .swiper__box {
             margin-top: 15px;
       }
-      .swiper-button-prev,
-      .swiper-button-next {
-            display: none!important;
-      }
+      
 }

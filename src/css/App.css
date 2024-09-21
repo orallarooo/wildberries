@@ -23,4 +23,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 

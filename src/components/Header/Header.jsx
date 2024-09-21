@@ -1,19 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./Header.css"
 
 import logo_img from "./img/logoWb.svg"
+import OverlayMenu from "../OverlayMenu/OverlayMenu";
+import OverlayBackground from "../OverlayBackground/OverlayBackground"
 
+import home_img from "./img/bm-home.svg"
+import search_img from "./img/bm-search.svg"
+import basket_img from "./img/bm-basket.svg"
+import like_img from "./img/bm-like.svg"
+import personal_img from "./img/bm-personal.svg"
 
 
 const Header = () => {
       const [isOpen, setIsOpen] = useState(false);
+      
       const toggleMenu  = () => {
            setIsOpen((open) => !open);
       }
 
+      useEffect(() => {
+            if (isOpen) {
+                  document.getElementsByTagName("body")[0].classList.add("lock");
+            }  else {
+                  document.getElementsByTagName("body")[0].classList.remove("lock");
+            }
+            
+      }, [isOpen]);
+
       return ( 
-            <header className="header">
+            <header className={`header ${isOpen ? "active" : ""}`}>
                   <div className="header__container">
                         <a href="#" className="logo">
                               <img src={logo_img} alt="" />
@@ -42,6 +59,26 @@ const Header = () => {
                                     <p>Корзина</p>
                               </a>
                         </div>
+                  </div>
+                  <OverlayMenu isOpen={isOpen}/>
+                  <OverlayBackground  isOpen={isOpen}/>
+
+                  <div className="bottom-menu">
+                        <a href="#">
+                              <img src={home_img} alt="" />
+                        </a>
+                        <a href="#"  onClick={toggleMenu}>
+                              <img src={search_img} alt="" />
+                        </a>
+                        <a href="#">
+                              <img className="bottom-menu__basket-img" src={basket_img} alt="" />
+                        </a>
+                        <a href="#">
+                              <img  className="bottom-menu__like-img" src={like_img} alt="" />
+                        </a>
+                        <a href="#">
+                              <img src={personal_img} alt="" />
+                        </a>
                   </div>
             </header>
       );

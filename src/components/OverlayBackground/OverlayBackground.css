@@ -1,0 +1,26 @@
+.overlay-bg {
+      position: fixed;
+      height: 100vh;
+      top: 90px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #2424245f;
+      z-index: 99;
+      user-select: none;
+
+      opacity: 0;
+
+      transition: all ease .3s;
+}
+
+.overlay-bg.active {
+      opacity: 1;
+      user-select: all;
+}
+
+@media screen and (max-width:1023px) {
+      .overlay-bg {
+            display: none;
+      }
+}
