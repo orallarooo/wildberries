@@ -2,7 +2,7 @@
       position: fixed;
       height: 100vh;
       top: 90px;
-      left: -100%;
+      left: -30%;
       bottom: 0;
       background-color: #2424245f;
       z-index: 999;
@@ -56,6 +56,9 @@
       }
 }
 @media screen and (max-width:1023px) {
+      .overlay-menu {
+            left: -100%;
+      }
       .overlay-menu {
             top: 64px;
             right: 0;
