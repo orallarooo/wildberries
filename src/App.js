@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <SimpleSlider /> */}
+      <SimpleSlider />
       <ProductBoxes/>
 
       <Suspense fallback={<div>Loading...</div>}>
