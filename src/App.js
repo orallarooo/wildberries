@@ -24,7 +24,7 @@ function App() {
 
       
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Footer />
       </Suspense>
     </div>

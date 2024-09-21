@@ -32,6 +32,7 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
+          
             <img src={slide_img} alt="" />
         </SwiperSlide>
         <SwiperSlide>
