@@ -5,12 +5,11 @@ import verified_img from "./img/verify.svg"
 import product_img_second from "./img/1.webp"
 import basket_img from "./img/basket.svg"
 
-
 const ProductBox = () => {
       return ( 
             <a href="#" className="product-box">
                   <div className="product-box__img">
-                        <img src={product_img_second} alt="" />
+                        <img width="284px" height="379px" src={product_img_second} alt="" />
                         <a href="#" className="product-box__img-link">
                               <p>
                                 Быстрый просмотр    

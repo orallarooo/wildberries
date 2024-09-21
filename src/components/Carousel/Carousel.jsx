@@ -18,8 +18,6 @@ import { Pagination, Navigation } from 'swiper/modules';
 export default function App() {
   return (
     <div className="swiper__box">
-
-   
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -32,8 +30,8 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          
-            <img src={slide_img} alt="" />
+
+            <img width="1490px" height="168px"  src={slide_img} alt="" />
         </SwiperSlide>
         <SwiperSlide>
             <img src={slide_img_2} alt="" />

@@ -14,16 +14,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Suspense fallback={<div style={{ height: "168px",margin: "28px 0", }}></div>}>
         <SimpleSlider />
       </Suspense>
       <Suspense fallback={<div></div>}>
         <ProductBoxes />
       </Suspense>
-
-      
-
       <Suspense fallback={<div></div>}>
         <Footer />
       </Suspense>
