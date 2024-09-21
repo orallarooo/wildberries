@@ -170,6 +170,9 @@
       .header {
             padding: 12px 0;
       }
+      .header__container {
+            height: 40px;
+      }
       .header__search-bar input {
             font-size: 16px;
             height: 40px;
