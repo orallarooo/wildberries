@@ -1,11 +1,10 @@
 .overlay-menu {
       position: fixed;
       height: 100vh;
-      top: 90px;
+      top: 114px;
       left: -30%;
       bottom: 0;
       background-color: #2424245f;
-      z-index: 999;
       user-select: all;
       overflow-y: scroll;
 
@@ -13,6 +12,7 @@
 }
 .overlay-menu.active {
       left: 0;
+      z-index: 999;
 }
 
 
@@ -37,15 +37,14 @@
       gap: 15px;
 }
 
-
-::-webkit-scrollbar {
+.overlay-menu::-webkit-scrollbar {
       width: 7px;
 }
 
-::-webkit-scrollbar-track {
+.overlay-menu::-webkit-scrollbar-track {
       background-color: #fff;
 }
-::-webkit-scrollbar-thumb {
+.overlay-menu::-webkit-scrollbar-thumb {
       background-color:#f1f1f5;
       border-radius: 3px;
 }

@@ -8,6 +8,7 @@ import vk_img           from "./img/vk.svg"
 import ok_img           from "./img/ok.svg"
 import tg_img           from "./img/tg.svg"
 import youtube_img      from "./img/youtube.svg"
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 const Footer = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -327,6 +328,7 @@ const Footer = () => {
             </div>
         </div>
         </div>
+        <ScrollToTop/>
     </footer>
 
 

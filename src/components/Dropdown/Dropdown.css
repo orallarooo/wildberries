@@ -8,7 +8,7 @@
       position: relative;
 }
 
-.active {
+.dropdown-button.active {
       color: #242424;
 }
 

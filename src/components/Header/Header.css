@@ -1,18 +1,105 @@
 .header {
       background: linear-gradient(0deg, rgba(36, 36, 36, .05) 0, rgba(36, 36, 36, .05) 100%), linear-gradient(97deg, #ed3cca .49%, #df34d2 14.88%, #d02bd9 29.27%, #bf22e1 43.14%, #ae1ae8 57.02%, #9a10f0 70.89%, #8306f7 84.76%, #7c1af8 99.15%);
-      padding: 16px 0;
+      padding: 8px 0 16px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+}
+
+.header.fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 9;
+      padding-top: 16px;
 }
 
 .header__container {
       max-width: 1490px;
       padding: 0 32px;
       margin: 0 auto;
-      height: 58px;
+}
 
+.header__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+}
+.header__top.fixed {
+      display: none;
+}
+.header__top-content  {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+}
+
+.header__top-content a {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      background-color: initial;
+      border-color: initial;
+      color: hsla(0, 0%, 100%, .6);
+      transition: color .3s ease 0s;
+}
+
+.header__top-content a:hover { 
+      color: rgba(255, 255, 255);
+}
+
+
+.header__top-content-lacation {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      gap: 5px;
+}
+
+.header__top-content-lacation svg {
+      opacity: .6;
+      transition: opacity .3s ease 0s;
+}
+
+.header__top-content-lacation:hover svg{
+      opacity: 1;
+}
+
+.header__top-language-box {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;    
+      background-color: hsla(0, 0%, 100%, .2);
+      padding: 0px 4px 0px 21px;
+      cursor: pointer;
+      position: relative;
+      border-radius: 8px;
+}
+.header__top-language-box:before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      left: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 8px;
+      background: url("./img/ru-flag.svg") no-repeat center;
+
+}
+
+.header__bottom {
+      height: 58px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 }
+
 
 .logo{
       margin-top: 3px;
@@ -216,6 +303,16 @@
       .header.active {
             background: #fff!important;
       }
+      .header.fixed {
+            padding-top: 12px;
+            position: absolute;
+      }
+      .header__top {
+            display: none;
+      }
+      .header__bottom {
+            height: auto;
+      }
 
       .header.active .header__search-bar input{
             background-color: #f6f6f9;
@@ -226,12 +323,6 @@
       .header.active .header__search-bar {
             margin-right: 0;
       }
-
-
-
-
-
-
 
       .header__container {
             height: 40px;
