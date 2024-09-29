@@ -5,6 +5,7 @@
       top: 0;
       left: 0;
       right: 0;
+      z-index: 999;
 }
 
 .header.fixed {
@@ -122,6 +123,8 @@
       align-items: center;
       justify-content: center;
       transition: border-color .3s ease 0s;
+
+      z-index: 1000;
 } 
 
 .header-burger-btn:hover {

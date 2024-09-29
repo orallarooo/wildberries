@@ -2,10 +2,9 @@ import person_img from "./img/menu_img.svg"
 
 import "./OverlayMenu.css"
 
-const OverlayMenu = ({isOpen,}) => {
+const OverlayMenu = ({isOpen, modalRef}) => {
       return ( 
-            <div 
-                  className={`overlay-menu ${isOpen ? "active" : ""}`}>
+            <div ref={modalRef} className={`overlay-menu ${isOpen ? "active" : ""}`}>
                   <nav className="overlay-menu__nav">
                         <ul className="overlay-menu__items">
                               <li className="overlay-menu__item">

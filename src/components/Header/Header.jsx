@@ -1,4 +1,4 @@
-import React, { useState, useEffect, } from "react"
+import React, { useState, useEffect, useRef} from "react"
 
 import "./Header.css"
 
@@ -61,7 +61,15 @@ const Header = () => {
 
 
 
+      const modalRef = useRef(null);
+      useEffect(() => {
+            modalRef.current.style.top = `${isFixed ? document.querySelector('.header').offsetHeight : "auto"}px`;
+      }, [isFixed]);
 
+      const modalRefSecond = useRef(null);
+      useEffect(() => {
+            modalRefSecond.current.style.top = `${isFixed ? document.querySelector('.header').offsetHeight : "auto"}px`;
+      }, [isFixed]);
 
 
 
@@ -122,8 +130,8 @@ const Header = () => {
 
 
 
-                  <OverlayMenu isOpen={isOpen} />
-                  <OverlayBackground  isOpen={isOpen}/>
+                  <OverlayBackground  isOpen={isOpen} modalRef={modalRefSecond}/>
+                  <OverlayMenu        isOpen={isOpen} modalRef={modalRef}/>
                   <div className="bottom-menu">
                         <a href="#">
                               <img src={home_img} alt="" />

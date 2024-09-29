@@ -1,8 +1,8 @@
 import "./OverlayBackground.css"
 
-const OverlayBackground = ({isOpen,}) => {
+const OverlayBackground = ({isOpen, modalRef}) => {
       return ( 
-            <div className={`overlay-bg ${isOpen ? "active" : ""}`}>
+            <div ref={modalRef} className={`overlay-bg ${isOpen ? "active" : ""}`}>
                   
             </div>
        );

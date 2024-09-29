@@ -7,12 +7,16 @@
       bottom: 0;
       right: 0;
       background-color: #2424245f;
-      z-index: 99;
+      z-index: 9;
       user-select: none;
 
       opacity: 0;
 
       transition: all ease .3s;
+}
+
+.overlay-bg.top-style {
+      top: 0!important;
 }
 
 .overlay-bg.active {
