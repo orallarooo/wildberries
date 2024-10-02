@@ -63,12 +63,12 @@ const Header = () => {
 
       const modalRef = useRef(null);
       useEffect(() => {
-            modalRef.current.style.top = `${isFixed ? document.querySelector('.header').offsetHeight : "auto"}px`;
+            modalRef.current.style.top = `${isFixed ? document.querySelector('.header').offsetHeight : "114"}px`;
       }, [isFixed]);
 
       const modalRefSecond = useRef(null);
       useEffect(() => {
-            modalRefSecond.current.style.top = `${isFixed ? document.querySelector('.header').offsetHeight : "auto"}px`;
+            modalRefSecond.current.style.top = `${isFixed ? document.querySelector('.header').offsetHeight : "114"}px`;
       }, [isFixed]);
 
 
